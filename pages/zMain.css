@@ -1,0 +1,85 @@
+/* Define CSS variables for colors */
+:root {
+  --link-color-light: #3366FF; /* Color for light theme links */
+  --link-color-dark: #22B14C;  /* Color for dark theme links */
+}
+
+/* Light theme */
+.reactMarkDownlight a:link,
+.reactMarkDownlight a:visited,
+.reactMarkDownlight a:hover,
+.reactMarkDownlight a:active {
+  color: var(--link-color-light);
+  background-color: transparent;
+  text-decoration: none; /* No underline for all states */
+}
+
+/* Dark theme */
+.reactMarkDowndark a:link,
+.reactMarkDowndark a:visited,
+.reactMarkDowndark a:hover,
+.reactMarkDowndark a:active {
+  color: var(--link-color-dark);
+  background-color: transparent;
+  text-decoration: none; /* No underline for all states */
+}
+
+/* Headings */
+.reactMarkDown h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+/* Additional styles for webxtor: token trade tab bid/ask chart */
+.apexcharts-xaxis-label-infini:last-child {
+  transform: translateX(-40px);
+}
+
+/* Dropdown menu CSS */
+#dropdown_menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+ul#dropItems {
+  list-style: none;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 0.3s, opacity 0.3s; /* Updated transitions */
+  border-radius: 10px;
+  box-shadow: none;
+  position: absolute;
+  overflow: hidden auto;
+  outline: 0px;
+  padding: 12px;
+  width: 230px;
+  z-index: 1010;
+  top: 35px;
+  transform-origin: left top;
+  opacity: 0;
+  transform: scale(0.7);
+  visibility: hidden; /* Hide by default */
+}
+
+ul#dropItems li {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 3px 15px;
+  transition: all 0.3s;
+}
+
+#darkItem:hover {
+  background: #2a2a2a !important;
+}
+
+#lightItem:hover {
+  background: #dfdfdf !important;
+}
+
+#dropdown_menu li:hover ul#dropItems {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible; /* Show on hover */
+}

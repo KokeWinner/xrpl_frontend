@@ -1,0 +1,36 @@
+[METADATA]
+modified = 2023-10-26T17:00:00.000Z
+
+[[VALIDATORS]]
+public_key = "nHUjYWSeiAepbkkrmwmQXFnohhr6Vy5oFK9Gk6TUF6MAT4qSiXSK"
+attestation = "9A379A630BA161A3E7A0969E472FAA82C1542FF24C412250C86AAEF55209DD35B639749596416C89A6B87AE9852460A1F1AA3819FEA3B40222531BC27E2D1A0C"
+network = "main"
+owner_country = "us"
+
+
+[[UNLS]]
+provider = "XRP Ledger Foundation"
+unl = "https://vl.xrplf.org"
+
+[[UNLS]]
+provider = "Ripple Labs"
+unl = "https://vl.ripple.com"
+
+
+[[ACCOUNTS]]
+address = "r4eucom3dUsswrYTxN27tMWYB7A8Y2hYrc"
+network = "main"
+
+[[PRINCIPALS]]
+name = "xrpl.to"
+email = "hello@xrpl.to"
+twitter = "@xrplto"
+
+
+[[CURRENCIES]]
+code = "XRP"
+issuer = "XRPL"
+network = "main"
+
+
+# End of file

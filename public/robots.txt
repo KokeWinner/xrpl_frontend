@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# User-Agent: YandexBot
+# Disallow: /token
+
+Sitemap: https://xrpl.to/sitemap.xml
